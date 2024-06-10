@@ -1,0 +1,47 @@
+*{
+  padding:0;
+  margin:0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+.navbar-links{
+  display: flex;
+  column-gap: 20px;
+}
+.navbar-links a{
+  text-decoration: none;
+  color: #1d232c;
+}
+.navbar-links a:hover{
+  text-decoration: underline;
+  color: #1d232c;
+}
+.search-bar{
+  padding:40px;
+  text-align: center;
+}
+.container{
+  border: 1px;
+  border-style: solid;
+  display: inline-block;
+  padding:5px;
+}
+.box{
+  width:400px;
+  height: 100px;
+  display: inline-block;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+p{
+  padding:5px;
+}
+.one{
+  width:50px;
+  height:50px;
+}

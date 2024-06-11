@@ -1,0 +1,58 @@
+*{
+  padding:0;
+  margin:0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  
+}
+.navbar-links{
+  display: flex;
+  column-gap: 20px;
+}
+.navbar-links a{
+  text-decoration: none;
+  color: #1d232c;
+}
+.navbar-links a:hover{
+  text-decoration: underline;
+  color: #1d232c;
+}
+.search-bar{
+  padding:40px;
+  text-align: center;
+}
+.box{
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  display: inline-block;
+  width: 300px;
+}
+img{
+  width: 300px;
+  height: 400px;
+}
+.product{
+  text-align: center;
+}
+.head{
+  text-align: center;
+  margin: 10px;
+}
+p{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: small;
+  padding: 3px;
+
+}
+.caption{
+  align-items: center;
+  
+}
+
+
+

@@ -1,0 +1,42 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+}
+.navbar-links{
+  display: flex;
+  column-gap: 20px;
+}
+.searchbar{
+  padding:10px;
+  text-align: center;
+}
+.searchbar input{
+  width:400px;
+  height:30px;
+  text-align: end;
+  font-size: small;
+  padding:2px;
+}
+.account{
+  display:flex;
+  padding:30px;
+
+}
+.need{
+  display:flex;
+  
+}
+.one{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.two{
+  
+}

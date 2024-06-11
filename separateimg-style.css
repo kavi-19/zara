@@ -141,6 +141,10 @@ p{
   text-align: center;
   border: 1px;
   border-style: solid;
+  background-color: black;
+}
+.add-1{
+  color:white;
 }
 
 

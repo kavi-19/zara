@@ -30,6 +30,7 @@
   border-style: solid;
   display: inline-block;
   padding:5px;
+  margin: 50px;
 }
 .box{
   width:400px;
@@ -39,9 +40,107 @@
   font-weight: lighter;
 }
 p{
-  padding:5px;
+  padding:10px;
+  font-weight: lighter;
+  color:black;
+  
 }
-.one{
-  width:50px;
-  height:50px;
+.slide-one img{
+  width:300px;
+  height: 400px;
 }
+.slide-one{
+  display: inline-block;
+  padding: 50px;
+}
+.container{
+  border: 1px;
+  border-style: solid;
+}
+.container-1{
+  border: 1px;
+  border-style: solid;
+  display: inline-block;
+  font-size: small;
+
+
+}
+.container-2{
+  border: 1px;
+  border-style: solid;
+
+}
+.container-3{
+  justify-content: space-around;
+  padding: 15px;
+}
+
+
+
+.color-1{
+  border: 1px;
+  border-style: solid;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  display:inline-block;
+  
+}
+.color-2{
+  border: 1px;
+  border-style: solid;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  display: inline-block;
+}
+.color-3{
+  border: 1px;
+  border-style: solid;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: inline-block;
+}
+.color-4{
+  border: 1px;
+  border-style: solid;
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  display: inline-block; 
+}
+.container-4{
+  padding: 5px;
+}
+.size-1{
+  border: 1px;
+  border-style: solid;
+  text-align: center;
+  
+}
+.size-2{
+  border: 1px;
+  border-style: solid;
+  text-align: center;
+  margin: 1px;
+}
+.size-3{
+  border: 1px;
+  border-style: solid;
+  text-align: center;
+  margin: 1px;
+}
+.size-4{
+  border: 1px;
+  border-style: solid;
+  text-align: center;
+  margin: 1px;
+}
+.container-5{
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+}
+
+

@@ -8,9 +8,21 @@
   align-items: center;
   padding:20px;
 }
+.navbar img{
+  width:300px;
+  height: 150px;
+}
 .navbar-links{
   display: flex;
   column-gap: 20px;
+}
+.navbar-links a{
+  text-decoration: none;
+  color: #1d232c;
+}
+.navbar-links a:hover{
+  text-decoration: underline;
+  color: #1d232c;
 }
 .searchbar{
   padding:10px;
@@ -26,17 +38,40 @@
 .account{
   display:flex;
   padding:30px;
+  justify-content: center;
 
 }
-.need{
-  display:flex;
-  
-}
-.one{
-  display: flex;
-  justify-content: space-between;
+.details{
   text-align: center;
 }
+.one{
+  width:300px;
+  height: 30px;
+}
+.font-1{
+  font-size: 20px;
+ 
+}
 .two{
+  width:300px;
+  height: 30px;
+}
+.font-2{
+  padding: 20px;
+  font-size: 20px;
   
+}
+.login_form button{
+  height: 40px;
+  width: 200px;
+  margin: 20px;
+  
+
+}
+.login_form #email_error,
+.login_form #password_error{
+  margin-top: 5px;
+  width:345px;
+  font-size: 18px;
+  color: #c62828;
 }

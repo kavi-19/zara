@@ -9,6 +9,14 @@ body {
   background-color: #aad5f6;
   height: 100vh;
 }
+.container1{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.product-links{
+  display: inline-block;
+}
 
 .slide {
   width: 100%;
@@ -73,11 +81,11 @@ body {
 }
 
 .header-nav {
-   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
+
 }
 
 .header-nav h1,
@@ -85,12 +93,12 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  display: inline-block;
+  
 }
 
 .header-nav ul {
   list-style: none;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   display: flex;
 }
@@ -113,7 +121,10 @@ body {
 .searchbar {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-left: 200px;
+  margin-bottom: 500px;
+
+
 }
 
 .searchbar input {
@@ -121,4 +132,11 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  
+}
+
+.header-nav img{
+  width: 300px;
+  height: 150px;
+  display: inline-block;
 }

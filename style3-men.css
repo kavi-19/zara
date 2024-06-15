@@ -9,6 +9,10 @@
   padding: 20px;
   
 }
+.navbar img{
+  width:300px;
+  height: 150px;
+}
 .navbar-links{
   display: flex;
   column-gap: 20px;

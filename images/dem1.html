@@ -1,0 +1,31 @@
+<a href="#" class="list-group-item" id="unf">Update UNF</a>  
+<a href="#" class="list-group-item" id="ui">Update UI</a>  
+<a href="#" class="list-group-item" id="ut">Update UT</a>  
+
+<section class="unf" style="display:none;">
+	UNF SECTION
+</section>
+
+<section class="ut" style="display:none;">
+	UI SECTION
+</section>
+
+<section class="ui" style="display:none;">
+	UT SECTION
+</section>
+
+
+
+
+
+$('.list-group-item').click(function(event){
+
+  // Preventing the default action which may mess up the view
+  event.preventDefault();
+
+$('a.list-group-item').removeClass('active');
+$(this).addClass('active');
+$('section').css('display', 'none');
+$('section.' + $(this).attr('id')).css('display', '');
+
+});

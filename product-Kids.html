@@ -3,111 +3,293 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style4-kids.css">
+  <link rel="stylesheet" href="style-all.css">
   <title>Product page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    .column {
+      float: left;
+      display: none;
+    }
+    .content {
+      background-color: white;
+      border: 1px solid black;
+      display: inline-block;
+      width: 300px;
+    }
+    .show {
+      display: block;
+    }
+    .btn {
+      border: 1px solid black;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+    }
+    .btn {
+      background-color: #ddd;
+    }
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+    .content img {
+      width: 300px;
+      height: 400px;
+    }
+    .content p{
+      font-weight: 100px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <div class="img-slider">
-  <nav class="navbar">
-    <img src="images/2560px-Zara_Logo.svg.jpg">
-    <div class="navbar-links">
-    <p class="navbar-link"><a href="Login.html">HOME</a></p>
-    <p class="navbar-link"><a href="">COLLECTION</a></p>
-    <p class="navbar-link"><a href="">CONTACT</a></p>
-    </div>
+    <nav class="navbar">
+      <img src="images/2560px-Zara_Logo.svg.jpg">
+      <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">HOME</a></p>
+        <p class="navbar-link"><a href="Login.html">LOGIN</a></p>
+        <p class="navbar-link"><a href="">CONTACT</a></p>
+      </div>
     </nav>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('VIEW-ALL')">VIEW-ALL</button>
+      <button class="btn" onclick="filterSelection('BEST SELLERS')">BEST SELLERS</button>
+      <button class="btn" onclick="filterSelection('BABY')">BABY</button>
+      <button class="btn" onclick="filterSelection('ACCESSORIES')">ACCESSORIES</button>
+    </div>
     <div class="search-bar">
       <input placeholder="Search">
     </div>
-    <div class="head">
-      <h1>Kids Collection</h1>
-    </div>
-    <div class="product">
-      <div class="box ">
-        <img src="images-3/12605430050-bby13.jpg">
-        <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/09874601712-bby1.jpg">
-        <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+    <div class="row">
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/09874601712-bby1.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
         <p> ₹ 7,590.00</p>
         </div>
-        
-      <div class="box ">
-        <img src="images-3/06108050330-bby4.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/01165774620-bby2.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/12605430050-bby13.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/01575087712-bby9.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/00905603406-bby5.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/02209608406-bby10.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/04493611405-bby12.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/04493715627-bby8.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/09874601712-bby1.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/04493715627-bby8.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/01576104703-bby9.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BEST SELLERS">
+        <div class="content">
+          <img src="images-3/01575087712-bby9.jpg">
+          <p> <a href="kidslink.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BABY">
+        <div class="content">
+          <img src="images-3/bby1.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BABY">
+        <div class="content">
+          <img src="images-3/bby-2.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+        <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BABY">
+        <div class="content">
+          <img src="images-3/bby3.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BABY">
+        <div class="content">
+          <img src="images-3/bby4.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BABY">
+        <div class="content">
+          <img src="images-3/bby5.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column BABY">
+        <div class="content">
+          <img src="images-3/05431630712-bby3.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
+      </div>
+      <div class="column ACCESSORIES">
+        <div class="content">
+          <img src="images-3/Acc-1.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
         <p> ₹ 7,590.00</p>
       </div>
-      <div class="box ">
-        <img src="images-3/05431630712-bby3.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
+      <div class="column ACCESSORIES">
+        <div class="content">
+          <img src="images-3/acc-2.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
       </div>
-      <div class="box ">
-        <img src="images-3/04493715627-bby8.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+      <div class="column ACCESSORIES">
+        <div class="content">
+          <img src="images-3/acc-3.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
         <p> ₹ 7,590.00</p>
+        </div>
       </div>
-      <div class="box ">
-        <img src="images-3/04493611405-bby12.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
+      <div class="column ACCESSORIES">
+        <div class="content">
+          <img src="images-3/acc-4.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
       </div>
-      <div class="box ">
-        <img src="images-3/04424605400-bby7.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
+      <div class="column ACCESSORIES">
+        <div class="content">
+          <img src="images-3/bby-2.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
       </div>
-    
-      <div class="box ">
-        <img src="images-3/02209608406-bby10.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/01971601600-bby6.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/01576104703-bby9.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/01575087712-bby9.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/01165774620-bby2.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/00905603406-bby5.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/01971601600-bby6.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/04493715627-bby8.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
-      </div>
-      <div class="box ">
-        <img src="images-3/06108050330-bby4.jpg">
-        <p> <a href="">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
-        <p> ₹ 7,590.00</p>
+      <div class="column ACCESSORIES">
+        <div class="content">
+          <img src="images-3/bby5.jpg">
+          <p> <a href="separateimg.html">ZW COLLECTION EMBROIDERED MIDI SKIRT</a></p>
+          <p> ₹ 7,590.00</p>
+        </div>
       </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </body>
-    </html>
+  </div>
+  <script>
+    filterSelection("VIEW-ALL")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "VIEW-ALL") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+</body>
+</html>

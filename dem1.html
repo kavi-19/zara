@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style5-beauty.css">
-  <title>Product page</title>
-</head>
-<body>
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 * {
   box-sizing: border-box;
 }
@@ -17,6 +12,8 @@ body {
   padding: 20px;
   font-family: Arial;
 }
+
+/* Center website */
 .main {
   max-width: 1000px;
   margin: auto;
@@ -26,27 +23,46 @@ h1 {
   font-size: 50px;
   word-break: break-all;
 }
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  display: none; 
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
 }
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
 .content {
   background-color: white;
-  border: solid;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
-  display: inline-block;
-  width: 300px;
+  padding: 10px;
 }
+
+/* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
+
+/* Style the buttons */
 .btn {
-  border: solid;
-  border-style: solid;
-  border-width: 1px;
-  border-color: black;
+  border: none;
+  outline: none;
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
@@ -59,10 +75,6 @@ h1 {
 .btn.active {
   background-color: #666;
   color: white;
-}
-.content img{
-  width: 300px;
-  height: 400px;
 }
 </style>
 </head>
@@ -82,153 +94,82 @@ h1 {
   <nav class="navbar">
     <img src="images/2560px-Zara_Logo.svg.jpg">
     <div class="navbar-links">
-    <p class="navbar-link"><a href="index.html">HOME</a></p>
-    <p class="navbar-link"><a href="Login.html">LOGIN</a></p>
+    <p class="navbar-link"><a href="Login.html">HOME</a></p>
+    <p class="navbar-link"><a href="">LOGIN</a></p>
     <p class="navbar-link"><a href="">CONTACT</a></p>
     </div>
     </nav>
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('VIEW-ALL')">VIEW-ALL</button>
-      <button class="btn" onclick="filterSelection('FRUITY')">FRUITY</button>
-      <button class="btn" onclick="filterSelection('WOODY')">WOODY</button>
-      <button class="btn" onclick="filterSelection('BEAUTY')">BEAUTY</button>
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+      <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+      <button class="btn" onclick="filterSelection('people')"> People</button>
     </div>
     <div class="search-bar">
       <input placeholder="Search">
     </div>
 <div class="row">
-  <div class="column FRUITY">
+  <div class="column nature">
     <div class="content">
-      <img src="images-4/20110518999-001-p4.jpg">
+      <img src="images-4/20110518999-001-p4.jpg" alt="Mountains" style="width:100%">
       <h4>Mountains</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column FRUITY">
+  <div class="column nature">
     <div class="content">
-    <img src="images-4/20210721999-025-p9.jpg">
+    <img src="images-4/20210721999-025-p9.jpg" alt="Lights" style="width:100%">
       <h4>Lights</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column FRUITY">
+  <div class="column nature">
     <div class="content">
-    <img src="images-4/20120512999-p1.jpg">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column FRUITY">
-    <div class="content">
-    <img src="images-4/20210726999-p6.jpg">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column FRUITY">
-    <div class="content">
-    <img src="images-4/20210550999-p5.jpg">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column FRUITY">
-    <div class="content">
-    <img src="images-4/20120830999-p3.jpg">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column FRUITY">
-    <div class="content">
-    <img src="images-4/20120824999-p2.jpg">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column FRUITY">
-    <div class="content">
-    <img src="images-4/20120512999-p1.jpg">
+    <img src="images-4/20210756999-020-p7.jpg" alt="Nature" style="width:100%">
       <h4>Forest</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   
-  
-  <div class="column WOODY">
+  <div class="column cars">
     <div class="content">
-      <img src="images-4/woody-1.jpg">
+      <img src="images-4/24130220970-ult17 lip3.jpg" alt="Car" style="width:100%">
       <h4>Retro</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column WOODY">
+  <div class="column cars">
     <div class="content">
-    <img src="images-4/woody-2.jpg">
+    <img src="images-4/20120830999-p3.jpg" alt="Car" style="width:100%">
       <h4>Fast</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column WOODY">
+  <div class="column cars">
     <div class="content">
-    <img src="images-4/woody-3.jpg">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column WOODY">
-    <div class="content">
-    <img src="images-4/woody-4.jpg">
+    <img src="images-4/24130339647-020-a4 lip2.jpg" alt="Car" style="width:100%">
       <h4>Classic</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
 
-  <div class="column BEAUTY">
+  <div class="column people">
     <div class="content">
-      <img src="images-4/b-1.jpg">
+      <img src="images-4/20210726999-p6.jpg" alt="Car" style="width:100%">
       <h4>Girl</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column BEAUTY">
+  <div class="column people">
     <div class="content">
-    <img src="images-4/b-2.jpg">
+    <img src="images-4/20120830999-p3.jpg" alt="Car" style="width:100%">
       <h4>Man</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column BEAUTY">
+  <div class="column people">
     <div class="content">
-    <img src="images-4/b-3.jpg">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column BEAUTY">
-    <div class="content">
-    <img src="images-4/b-4.jpg">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column BEAUTY">
-    <div class="content">
-    <img src="images-4/b-5.jpg">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column BEAUTY">
-    <div class="content">
-    <img src="images-4/b-6.jpg">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column BEAUTY">
-    <div class="content">
-    <img src="images-4/b-7.jpg">
+    <img src="images-4/20210547999-021-p10.jpg" alt="Car" style="width:100%">
       <h4>Woman</h4>
       <p>Lorem ipsum dolor..</p>
     </div>

@@ -3,8 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style6-login.css">
   <title>zara.com/in/en/login</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+  *{
+  margin:0px;
+  padding:0px;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+}
+.navbar img{
+  width:300px;
+  height: 150px;
+}
+.navbar-links{
+  display: flex;
+  column-gap: 20px;
+}
+.navbar-links a{
+  text-decoration: none;
+  color: #1d232c;
+}
+.navbar-links a:hover{
+  text-decoration: underline;
+  color: #1d232c;
+}
+.searchbar{
+  padding:10px;
+  text-align: center;
+}
+.searchbar input{
+  width:400px;
+  height:30px;
+  text-align: end;
+  font-size: small;
+  padding:2px;
+}
+.one{
+  padding:10px;
+
+}
+</style>
 </head>
 <body>
   <div class="img-slider">
@@ -12,33 +62,70 @@
       <img src="images/2560px-Zara_Logo.svg.jpg">
       <div class="navbar-links">
       <p class="navbar-link"><a href="index.html">HOME</a></p>
-      <p class="navbar-link"><a href="">LOGIN</a></p>
+      <p class="navbar-link"><a href="Login.html">LOGIN</a></p>
       <p class="navbar-link"><a href="">CONTACT</a></p>
       </div>
       </nav>
       <div class="searchbar">
         <input placeholder="SEARCH">
       </div>
-      <div class="account">
-        <h1>LOG IN TO YOUR ACCOUNT</h1>
+      <div class="container">
+        <h1 class="text-center text-success">Create an Account</h1><br>
+        <div class="col-lg-8 m-auto d-block">
+    
+            <form class="bg-light" action="index.html" onsubmit="return validation()">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="emailid" class="form-control" autocontrol="off">
+                    <span id="emailid_error" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input type="password" name="password" id="password" class="form-control" autocontrol="off">
+                    <span id="passwords_error" class="text-danger font-weight-bold"></span>
+                </div>
+                <input type="submit" name="submit" value="Submit" class="btn btn-success">
+                <p class="one"><a href="Create account.html">Create an account</a></p>
+            </form>
+    
         </div>
-	<div class="container">
-		<h1 class="label">User Login</h1>
-		<form class="login_form" name="form" onsubmit="return validated()">
-			<div class="font">Email or Phone</div>
-			<input autocomplete="off" type="text" name="email">
-			<div id="email_error">Please fill up your Email or Phone</div>
-			<div class="font font2">Password</div>
-			<input type="password" name="password">
-			<div id="pass_error">Please fill up your Password</div>
-			<button type="submit">Login</button>
-		</form>
-	</div>	
-	<script src="valid.js"></script>
+    </div>
+    
+    <script>
+    function validation() {
+        var email = document.getElementById('emailid').value;
+        var password = document.getElementById('password').value;
+        var isValid = true;
+    
+        if (email == "") {
+            document.getElementById('emailid_error').innerHTML = " ** Please fill in the email";
+            isValid = false;
+        } else if (email.indexOf('@') <= 0) {
+            document.getElementById('emailid_error').innerHTML = " ** Please fill a proper email format (@)";
+            isValid = false;
+        } else if (email.charAt(email.length - 4) != '.' && email.charAt(email.length - 3) != '.') {
+            document.getElementById('emailid_error').innerHTML = " ** Please fill a proper email format (.)";
+            isValid = false;
+        } else {
+            document.getElementById('emailid_error').innerHTML = "";
+        }
+    
+        if (password == "") {
+            document.getElementById('passwords_error').innerHTML = " ** Please fill in the password";
+            isValid = false;
+        } else if (password.length < 5 || password.length > 20) {
+            document.getElementById('passwords_error').innerHTML = " ** Password must be between 5 and 20 characters";
+            isValid = false;
+        } else {
+            document.getElementById('passwords_error').innerHTML = "";
+        }
+    
+        return isValid;
+    }
+    </script>
+    
+	
 </body>
 </html>
       
-      <script src="Login.js">
-      </script>
-      </body>
-      </html>
+      
